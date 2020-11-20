@@ -1,0 +1,44 @@
+html {
+    @include box-sizing( border-box );
+}
+
+*,
+*::before,
+*::after {
+    @include box-sizing( inherit );
+}
+
+body {
+    background-color: $gris;
+    font-family: $firstFont;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
