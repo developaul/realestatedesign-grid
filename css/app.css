@@ -43,6 +43,23 @@ p {
   font-weight: 300;
 }
 
+.botton {
+  background-color: #7ABE47;
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #7ABE47;
+  transition: all .5s ease-in-out;
+}
+
+.botton:hover {
+  background-color: #FFFFFF;
+  color: #7ABE47;
+}
+
 .contenedor {
   max-width: 1100px;
   margin: 0 auto;
@@ -105,4 +122,101 @@ p {
     grid-column-gap: 2rem;
     text-align: left;
   }
+}
+
+.venta {
+  display: grid;
+  grid-template: repeat(3, auto)/repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.venta img {
+  width: 100%;
+}
+
+.venta .destacada {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 1050px) {
+  .venta {
+    grid: repeat(2, auto)/repeat(3, 1fr);
+  }
+}
+
+.anuncio {
+  display: grid;
+}
+
+.anuncio .card {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border: 1px solid #c7c7c7;
+}
+
+.anuncio .card p {
+  font-size: .9rem;
+  line-height: 1.8rem;
+}
+
+.anuncio .precio {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.anuncio .precio span {
+  font-weight: 300;
+  color: #7ABE47;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  background-color: #7ABE47;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .contenedor {
+    display: grid;
+    grid-template-columns: 30% 20% 2fr;
+    grid-column-gap: 2rem;
+  }
+}
+
+.widget h3 {
+  margin-bottom: 2rem;
+}
+
+.widget a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.widget .contenedor-casas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.widget .contenedor-casas .casa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.widget .contenedor-casas .casa p {
+  margin: 0;
+}
+
+.copyright {
+  background-color: #57A42B;
+  margin: 3rem 0 0;
+  text-align: center;
+  padding: 1rem;
 }
